@@ -1,6 +1,6 @@
 package D_Arrays.D16_Maximum_SubArray;
 
-public class Approach2_optimal {
+public class Approach2_Kadane_Algorithm {
     public static int MaxSubArray(int[] arr){
         int result = arr[0];
         int MaxEnding= arr[0];
