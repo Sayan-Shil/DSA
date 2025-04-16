@@ -2,12 +2,12 @@ package D_Arrays.D16_Maximum_SubArray;
 
 public class Approach2_optimal {
     public static int MaxSubArray(int[] arr){
-        int result=0;
-        int present= 0;
-        for (int i = 0; i <arr.length ; i++) {
-            if(arr[i]<0){
-                present = 0;
-            }
+        int result = arr[0];
+        int MaxEnding= arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            MaxEnding = Math.max(MaxEnding+arr[i],arr[i]);
+            result = Math.max(result,MaxEnding);
         }
         return result;
     }
