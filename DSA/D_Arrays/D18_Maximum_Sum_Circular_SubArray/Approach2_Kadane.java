@@ -1,8 +1,5 @@
 package D_Arrays.D18_Maximum_Sum_Circular_SubArray;
 
-import D_Arrays.D16_Maximum_SubArray.Approach2_optimal;
-
-import static D_Arrays.D16_Maximum_SubArray.Approach2_optimal.MaxSubArray;
 
 public class Approach2_Kadane {
     public static int maxSubarraySumCircular(int[] nums) {
